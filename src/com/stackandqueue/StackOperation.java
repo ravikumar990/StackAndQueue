@@ -3,6 +3,8 @@ package com.stackandqueue;
 import java.util.Stack;
 
 public class StackOperation {
+
+	// add elements
 	public static void addElement() {
 		StackAndQueue list = new StackAndQueue();
 		list.push(56);
@@ -11,6 +13,7 @@ public class StackOperation {
 		list.display();
 	}
 
+	// show top element in list
 	public static void peek() {
 		StackAndQueue list = new StackAndQueue();
 		list.push(70);
@@ -19,6 +22,7 @@ public class StackOperation {
 		list.peek();
 	}
 
+	// remove elements
 	public static void pop() {
 		System.out.println("Before Pop:");
 		StackAndQueue list = new StackAndQueue();
@@ -32,11 +36,26 @@ public class StackOperation {
 		list.display();
 	}
 
+	// create queue
 	public static void queueElement() {
 		StackAndQueue list = new StackAndQueue();
 		list.queue(56);
 		list.queue(30);
 		list.queue(70);
+		list.display();
+	}
+
+	// dequeue elements
+	public static void dequeueElement() {
+		StackAndQueue list = new StackAndQueue();
+		list.queue(56);
+		list.queue(30);
+		list.queue(70);
+		System.out.println("Before Pop:");
+
+		list.display();
+		list.pop();
+		System.out.println("\nAfter Pop:");
 		list.display();
 	}
 }

@@ -6,6 +6,7 @@ public class StackAndQueue {
 	Node tail;
 	Node top;
 
+	// add elements in list
 	public void push(int data) {
 		Node newnode = new Node(data);
 		if (head == null) {
@@ -19,10 +20,12 @@ public class StackAndQueue {
 		top = head;
 	}
 
+	// show top element in list
 	public void peek() {
 		System.out.println("Top element is " + this.top.data);
 	}
 
+	// remove element from list
 	public void pop() {
 		Node temp = top;
 		while (temp != null) {
@@ -32,6 +35,7 @@ public class StackAndQueue {
 		}
 	}
 
+	// create queue
 	public void queue(int data) {
 		Node newNode = new Node(data);
 		if (head == null) {
@@ -45,12 +49,15 @@ public class StackAndQueue {
 		}
 	}
 
+	// display output
 	public void display() {
 		if (head == null) {
 			System.out.println("Linked list is Empty");
 			return;
 		} else {
 			Node tempNode = head;
+
+			// iterate list
 			while (tempNode != null) {
 				System.out.print(tempNode.data + " ");
 				tempNode = tempNode.next;
