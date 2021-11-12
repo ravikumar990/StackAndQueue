@@ -31,4 +31,30 @@ public class StackAndQueue {
 			temp = temp.next;
 		}
 	}
+
+	public void queue(int data) {
+		Node newNode = new Node(data);
+		if (head == null) {
+			head = newNode;
+			tail = newNode;
+			top = head;
+		} else {
+			Node tempNode = tail;
+			this.tail = newNode;
+			tempNode.next = tail;
+		}
+	}
+
+	public void display() {
+		if (head == null) {
+			System.out.println("Linked list is Empty");
+			return;
+		} else {
+			Node tempNode = head;
+			while (tempNode != null) {
+				System.out.print(tempNode.data + " ");
+				tempNode = tempNode.next;
+			}
+		}
+	}
 }

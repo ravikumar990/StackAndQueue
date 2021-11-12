@@ -8,14 +8,18 @@ public class StackAndQueueMain {
 
 		System.out.println("Create Stack");
 		StackOperation.addElement();
-		System.out.println("===================");
+		System.out.println("\n===================");
 
 		System.out.println("Top element in stack");
 		StackOperation.peek();
-		System.out.println("===================");
+		System.out.println("\n===================");
 
 		System.out.println("Delete last element from stack");
 		StackOperation.pop();
-		System.out.println("===================");
+		System.out.println("\n===================");
+
+		System.out.println("Create Queue");
+		StackOperation.queueElement();
+		System.out.println("\n===================");
 	}
 }
