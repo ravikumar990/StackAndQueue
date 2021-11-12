@@ -10,5 +10,12 @@ public class StackAndQueueMain {
 		StackOperation.addElement();
 		System.out.println("===================");
 
+		System.out.println("Top element in stack");
+		StackOperation.peek();
+		System.out.println("===================");
+
+		System.out.println("Delete last element from stack");
+		StackOperation.pop();
+		System.out.println("===================");
 	}
 }

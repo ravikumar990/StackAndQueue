@@ -19,16 +19,16 @@ public class StackAndQueue {
 		top = head;
 	}
 
-	// print the list
-	public void printFun() {
-		if (head == null) {
-			System.out.println("Linked List is Empty");
-		} else {
-			Node temp = head;
-			while (temp != null) {
-				System.out.print(temp.data + " ");
-				temp = temp.next;
-			}
+	public void peek() {
+		System.out.println("Top element is " + this.top.data);
+	}
+
+	public void pop() {
+		Node temp = top;
+		while (temp != null) {
+			Node tempNode = this.head;
+			this.head = tempNode.next;
+			temp = temp.next;
 		}
 	}
 }
